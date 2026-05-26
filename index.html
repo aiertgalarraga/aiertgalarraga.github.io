@@ -596,6 +596,39 @@
   .grid-2col + .grid-2col { margin-top:16px; }
   .img-cell { aspect-ratio:222/277; overflow:hidden; border-radius:12px; }
   .img-cell img { width:100%; height:100%; object-fit:contain; display:block; background:#000; border-radius:12px; }
+
+  .hero-wrap { position:relative; width:100%; padding-top:53.11%; }
+  .hero-wrap img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border-radius:12px; }
+  .hero-caption { margin-top:14px; font-size:13px; font-weight:400; color:#333; text-align:center; line-height:1.55; }
+  .design-process-grid { display:flex; gap:12px; align-items:stretch; }
+  .dp-left { flex:1; display:flex; flex-direction:column; gap:12px; }
+  .dp-img-square { position:relative; width:100%; padding-top:79.11%; }
+  .dp-img-square img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border-radius:12px; }
+  .dp-right { flex:1; }
+  .dp-right img { width:100%; height:100%; object-fit:cover; border-radius:12px; display:block; }
+  .installed-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .installed-item { position:relative; width:100%; padding-top:50.67%; }
+  .installed-item img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border-radius:12px; }
+  .promo-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+  .promo-item { position:relative; width:100%; padding-top:140.74%; }
+  .promo-item img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border-radius:12px; }
+  .pdf-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+  .pdf-item { position:relative; width:100%; padding-top:79.86%; }
+  .pdf-item img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border-radius:12px; }
+
+  .row { display:flex; gap:12px; margin-bottom:12px; align-items:flex-start; }
+  .row:last-child { margin-bottom:0; }
+  .img-box { position:relative; width:100%; overflow:hidden; border-radius:12px; }
+  .img-box img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border-radius:12px; display:block; }
+  .bio-text { font-family:'GothamLight','Gotham',sans-serif; font-weight:300; font-size:14px; line-height:1.7; color:#111; display:flex; flex-direction:column; justify-content:center; gap:14px; padding:8px 0; }
+
+  img.proj-img { width:100%; height:auto; display:block; border-radius:12px; }
+  .gap { display:flex; flex-direction:column; gap:12px; }
+  .won-row-ab { display:grid; grid-template-columns:1fr 1fr; gap:12px; align-items:start; }
+  .won-left-ab { display:flex; flex-direction:column; gap:12px; }
+  .won-row-c { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .exp-row-3col { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; align-items:start; }
+  .exp-row-2col { display:grid; grid-template-columns:1fr 1fr; gap:12px; align-items:start; }
 </style>
 </head>
 <body>
@@ -1262,11 +1295,72 @@
 <!-- ══════════════ PLAYGROUND ══════════════ -->
 <div id="playground" class="page">
   <div class="project-page">
+
+    <!-- Title pill -->
     <div style="margin:40px auto 0;max-width:1100px;width:calc(100% - 32px);background:rgba(200,215,255,0.28);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1.5px solid rgba(255,255,255,0.75);border-radius:14px;box-shadow:0 0 8px 2px rgba(43,59,168,0.30),0 0 20px 6px rgba(43,59,168,0.20),0 0 35px 10px rgba(245,166,35,0.18),0 0 55px 18px rgba(43,59,168,0.08),inset 0 1px 3px rgba(255,255,255,0.95);padding:28px 40px;text-align:center;">
       <div style="font-family:'HeadingNow','Gotham',sans-serif;font-weight:900;font-size:clamp(60px,12vw,140px);color:var(--orange);line-height:0.88;letter-spacing:-2px;">PLAYGROUND<br>DESIGN</div>
     </div>
+
+    <!-- Hero -->
+    <div style="margin:40px auto 0;max-width:1100px;width:calc(100% - 32px);background:rgba(200,215,255,0.28);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1.5px solid rgba(255,255,255,0.75);border-radius:14px;box-shadow:0 0 8px 2px rgba(43,59,168,0.30),0 0 20px 6px rgba(43,59,168,0.20),0 0 35px 10px rgba(245,166,35,0.18),0 0 55px 18px rgba(43,59,168,0.08),inset 0 1px 3px rgba(255,255,255,0.95);padding:24px;">
+      <div class="hero-wrap"><img src="images/img_120.png" alt="ESP Play aerial render"></div>
+      <p class="hero-caption">At ESP Play I had the responsibility of designing, costing and rendering entire playgrounds working independently within the Midlands. I worked closely with a sales representative, providing branded ESP Play collateral to improve the customer experience and promote sales. My responsibility in addition to design were; costing, 3D turnarounds, 3D design flyover videos, product development, costing reductions, technical drawings and providing advice to contractors. To the right is an example of a bespoke area I created which shows the process from initial design to installation.</p>
+    </div>
+
+    <!-- Design Process -->
+    <div style="margin:40px auto 0;max-width:1100px;width:calc(100% - 32px);background:rgba(200,215,255,0.28);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1.5px solid rgba(255,255,255,0.75);border-radius:14px;box-shadow:0 0 8px 2px rgba(43,59,168,0.30),0 0 20px 6px rgba(43,59,168,0.20),0 0 35px 10px rgba(245,166,35,0.18),0 0 55px 18px rgba(43,59,168,0.08),inset 0 1px 3px rgba(255,255,255,0.95);padding:24px;">
+      <div style="font-family:'Gotham','Barlow Condensed',sans-serif;font-weight:900;font-size:15px;letter-spacing:0.12em;text-transform:uppercase;text-align:center;color:var(--blue);margin-bottom:18px;">Design Process</div>
+      <p class="hero-caption" style="margin-bottom:18px;">At ESP Play I had the responsibility of designing, costing and rendering entire playgrounds working independently within the Midlands. I worked closely with a sales representative, providing branded ESP Play collateral to improve the customer experience and promote sales. My responsibility in addition to design were; costing, 3D turnarounds, 3D design flyover videos, product development, costing reductions, technical drawings and providing advice to contractors. To the right is an example of a bespoke area I created which shows the process from initial design to installation.</p>
+      <div class="design-process-grid">
+        <div class="dp-left">
+          <div class="dp-img-square"><img src="images/img_121.png" alt="Design render"></div>
+          <div class="dp-img-square"><img src="images/img_122.png" alt="Installed design"></div>
+        </div>
+        <div class="dp-right">
+          <img src="images/img_123.png" alt="Installed photo portrait">
+        </div>
+      </div>
+    </div>
+
+    <!-- Installed Designs -->
+    <div style="margin:40px auto 0;max-width:1100px;width:calc(100% - 32px);background:rgba(200,215,255,0.28);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1.5px solid rgba(255,255,255,0.75);border-radius:14px;box-shadow:0 0 8px 2px rgba(43,59,168,0.30),0 0 20px 6px rgba(43,59,168,0.20),0 0 35px 10px rgba(245,166,35,0.18),0 0 55px 18px rgba(43,59,168,0.08),inset 0 1px 3px rgba(255,255,255,0.95);padding:24px;">
+      <div style="font-family:'Gotham','Barlow Condensed',sans-serif;font-weight:900;font-size:15px;letter-spacing:0.12em;text-transform:uppercase;text-align:center;color:var(--blue);margin-bottom:18px;">Installed Designs</div>
+      <div class="installed-grid">
+        <div class="installed-item"><img src="images/img_124.png" alt="Installed 1"></div>
+        <div class="installed-item"><img src="images/img_125.png" alt="Installed 2"></div>
+        <div class="installed-item"><img src="images/img_126.png" alt="Installed 3"></div>
+        <div class="installed-item"><img src="images/img_127.png" alt="Installed 4"></div>
+        <div class="installed-item"><img src="images/img_128.png" alt="Installed 5"></div>
+        <div class="installed-item"><img src="images/img_129.png" alt="Installed 6"></div>
+        <div class="installed-item"><img src="images/img_130.png" alt="Installed 7"></div>
+        <div class="installed-item"><img src="images/img_131.png" alt="Installed 8"></div>
+      </div>
+    </div>
+
+    <!-- Promotional Design -->
+    <div style="margin:40px auto 0;max-width:1100px;width:calc(100% - 32px);background:rgba(200,215,255,0.28);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1.5px solid rgba(255,255,255,0.75);border-radius:14px;box-shadow:0 0 8px 2px rgba(43,59,168,0.30),0 0 20px 6px rgba(43,59,168,0.20),0 0 35px 10px rgba(245,166,35,0.18),0 0 55px 18px rgba(43,59,168,0.08),inset 0 1px 3px rgba(255,255,255,0.95);padding:24px;">
+      <div style="font-family:'Gotham','Barlow Condensed',sans-serif;font-weight:900;font-size:15px;letter-spacing:0.12em;text-transform:uppercase;text-align:center;color:var(--blue);margin-bottom:18px;">Promotional Design</div>
+      <div class="promo-grid">
+        <div class="promo-item"><img src="images/img_132.png" alt="Promo 1"></div>
+        <div class="promo-item"><img src="images/img_133.png" alt="Promo 2"></div>
+        <div class="promo-item"><img src="images/img_134.png" alt="Promo 3"></div>
+        <div class="promo-item"><img src="images/img_135.png" alt="Promo 4"></div>
+      </div>
+    </div>
+
+    <!-- Interactive PDFs -->
+    <div style="margin:40px auto 0;max-width:1100px;width:calc(100% - 32px);background:rgba(200,215,255,0.28);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1.5px solid rgba(255,255,255,0.75);border-radius:14px;box-shadow:0 0 8px 2px rgba(43,59,168,0.30),0 0 20px 6px rgba(43,59,168,0.20),0 0 35px 10px rgba(245,166,35,0.18),0 0 55px 18px rgba(43,59,168,0.08),inset 0 1px 3px rgba(255,255,255,0.95);padding:24px;">
+      <div style="font-family:'Gotham','Barlow Condensed',sans-serif;font-weight:900;font-size:15px;letter-spacing:0.12em;text-transform:uppercase;text-align:center;color:var(--blue);margin-bottom:18px;">Interactive PDF's</div>
+      <div class="pdf-grid">
+        <div class="pdf-item"><img src="images/img_136.png" alt="PDF 1"></div>
+        <div class="pdf-item"><img src="images/img_137.png" alt="PDF 2"></div>
+        <div class="pdf-item"><img src="images/img_138.png" alt="PDF 3"></div>
+      </div>
+    </div>
+
   </div>
 </div>
+
 
 <!-- ══════════════ POSTERS ══════════════ -->
 <div id="posters" class="page">
@@ -1301,66 +1395,146 @@
 <!-- ══════════════ ARCHITECTURE ══════════════ -->
 <div id="architecture" class="page">
   <div class="project-page">
+
+    <!-- Title pill -->
     <div style="margin:40px auto 0;max-width:1100px;width:calc(100% - 32px);background:rgba(200,215,255,0.28);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1.5px solid rgba(255,255,255,0.75);border-radius:14px;box-shadow:0 0 8px 2px rgba(43,59,168,0.30),0 0 20px 6px rgba(43,59,168,0.20),0 0 35px 10px rgba(245,166,35,0.18),0 0 55px 18px rgba(43,59,168,0.08),inset 0 1px 3px rgba(255,255,255,0.95);padding:28px 40px;text-align:center;">
       <div style="font-family:'HeadingNow','Gotham',sans-serif;font-weight:900;font-size:clamp(60px,12vw,140px);color:var(--orange);line-height:0.88;letter-spacing:-2px;">ARCHITECTURE<br>DESIGN</div>
     </div>
-  </div>
-</div>
 
-<!-- ══════════════ CONTACT ══════════════ -->
-<div id="contact" class="page">
-  <div class="project-page" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:calc(100vh - 82px);padding:40px 20px;">
-    <button class="back-btn" onclick="showPage('home')" style="margin-bottom:24px; align-self:flex-start;">← Back</button>
-    <div style="background:rgba(255,255,255,0.82);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1.5px solid rgba(255,255,255,0.75);border-radius:18px;box-shadow:0 0 8px 2px rgba(43,59,168,0.30),0 0 20px 6px rgba(43,59,168,0.20),0 0 35px 10px rgba(245,166,35,0.18),0 0 55px 18px rgba(43,59,168,0.08),inset 0 1px 3px rgba(255,255,255,0.95);padding:44px 36px;max-width:500px;width:100%;text-align:center;">
-      <div style="font-family:'Anton',sans-serif;font-size:56px;color:var(--orange);line-height:0.9;margin-bottom:8px;">CONTACT ME</div>
-      <div style="font-family:'Dancing Script',cursive;font-size:26px;color:#444;margin-bottom:32px;">Aiert Galarraga</div>
-      <div style="display:flex;flex-direction:column;gap:14px;">
-        <div style="display:flex;align-items:center;gap:14px;background:var(--dark);border-radius:10px;padding:14px 20px;">
-          <div class="fc-icon">📞</div>
-          <span style="color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:16px;">+44 7742126230</span>
+    <!-- DESIGN ASPECT -->
+    <div style="margin:40px auto 0;max-width:1100px;width:calc(100% - 32px);background:rgba(200,215,255,0.28);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1.5px solid rgba(255,255,255,0.75);border-radius:14px;box-shadow:0 0 8px 2px rgba(43,59,168,0.30),0 0 20px 6px rgba(43,59,168,0.20),0 0 35px 10px rgba(245,166,35,0.18),0 0 55px 18px rgba(43,59,168,0.08),inset 0 1px 3px rgba(255,255,255,0.95);padding:24px;">
+      <div style="font-family:'Gotham','Barlow Condensed',sans-serif;font-weight:900;font-size:15px;letter-spacing:0.12em;text-transform:uppercase;text-align:center;color:var(--blue);margin-bottom:18px;">Birkenhead School of Art — Design Aspect</div>
+
+      <div class="row">
+        <div style="flex:0 0 calc(50% - 6px);">
+          <div class="img-box" style="padding-top:107.66%;"><img src="images/img_139.png" alt=""></div>
         </div>
-        <div style="display:flex;align-items:center;gap:14px;background:var(--dark);border-radius:10px;padding:14px 20px;">
-          <div class="fc-icon">✉</div>
-          <span style="color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:16px;">alertgalarraga@gmail.com</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:14px;background:var(--dark);border-radius:10px;padding:14px 20px;">
-          <div class="fc-icon" style="font-size:11px;font-weight:900;font-family:'Barlow Condensed',sans-serif;">in</div>
-          <span style="color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:16px;">Aiert Galarraga</span>
+        <div style="flex:1;" class="bio-text">
+          <p>Hi, I'm a graphic designer with a passion for blending 2D design and 3D visuals to create work with depth, personality and purpose. With experience across the e-commerce and design industry, I focus on creating impactful visuals that not only look engaging but communicate with clarity.</p>
+          <p>I work across branding, product mockups, and immersive visual environments using tools like Cinema 4D, Blender, and the Adobe Creative Suite. I bring a mix of technical precision, creative problem-solving, and a continuous drive to innovate and elevate my work.</p>
         </div>
       </div>
+
+      <div class="row">
+        <div style="flex:1;"><div class="img-box" style="padding-top:106.48%;"><img src="images/img_140.png" alt=""></div></div>
+        <div style="flex:1;"><div class="img-box" style="padding-top:106.48%;"><img src="images/img_141.png" alt=""></div></div>
+        <div style="flex:1;"><div class="img-box" style="padding-top:106.48%;"><img src="images/img_142.png" alt=""></div></div>
+        <div style="flex:1;"><div class="img-box" style="padding-top:106.48%;"><img src="images/img_143.png" alt=""></div></div>
+      </div>
+
+      <div class="row">
+        <div style="flex:1;"><div class="img-box" style="padding-top:64.21%;"><img src="images/img_144.png" alt=""></div></div>
+      </div>
+
+      <div class="row">
+        <div style="flex:1;"><div class="img-box" style="padding-top:128.47%;"><img src="images/img_145.png" alt=""></div></div>
+        <div style="flex:1;"><div class="img-box" style="padding-top:128.47%;"><img src="images/img_146.png" alt=""></div></div>
+        <div style="flex:1;"><div class="img-box" style="padding-top:128.47%;"><img src="images/img_147.png" alt=""></div></div>
+      </div>
     </div>
+
+    <!-- TECHNICAL ASPECT -->
+    <div style="margin:40px auto 0;max-width:1100px;width:calc(100% - 32px);background:rgba(200,215,255,0.28);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1.5px solid rgba(255,255,255,0.75);border-radius:14px;box-shadow:0 0 8px 2px rgba(43,59,168,0.30),0 0 20px 6px rgba(43,59,168,0.20),0 0 35px 10px rgba(245,166,35,0.18),0 0 55px 18px rgba(43,59,168,0.08),inset 0 1px 3px rgba(255,255,255,0.95);padding:24px;">
+      <div style="font-family:'Gotham','Barlow Condensed',sans-serif;font-weight:900;font-size:15px;letter-spacing:0.12em;text-transform:uppercase;text-align:center;color:var(--blue);margin-bottom:18px;">Birkenhead School of Art — Technical Aspect</div>
+
+      <div class="row">
+        <div style="flex:0 0 calc(50% - 6px);">
+          <div class="img-box" style="padding-top:271.17%;"><img src="images/img_148.png" alt=""></div>
+        </div>
+        <div style="flex:1; display:flex; flex-direction:column; gap:12px;">
+          <div class="img-box" style="padding-top:88.99%;"><img src="images/img_149.png" alt=""></div>
+          <div class="img-box" style="padding-top:88.99%;"><img src="images/img_150.png" alt=""></div>
+          <div class="img-box" style="padding-top:88.99%;"><img src="images/img_151.png" alt=""></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div style="flex:1;"><div class="img-box" style="padding-top:87.39%;"><img src="images/img_152.png" alt=""></div></div>
+        <div style="flex:1;"><div class="img-box" style="padding-top:88.99%;"><img src="images/img_153.png" alt=""></div></div>
+      </div>
+
+      <div class="row">
+        <div style="flex:1;"><div class="img-box" style="padding-top:87.39%;"><img src="images/img_154.png" alt=""></div></div>
+        <div style="flex:1;"><div class="img-box" style="padding-top:88.99%;"><img src="images/img_155.png" alt=""></div></div>
+      </div>
+
+      <div class="row">
+        <div style="flex:1;"><div class="img-box" style="padding-top:24.22%;"><img src="images/img_156.png" alt=""></div></div>
+      </div>
+
+      <div class="row">
+        <div style="flex:1;"><div class="img-box" style="padding-top:34.0%;"><img src="images/img_157.png" alt=""></div></div>
+      </div>
+
+      <div class="row" style="align-items:stretch;">
+        <div style="flex:0 0 calc(50% - 6px); display:flex; flex-direction:column; gap:12px;">
+          <div class="img-box" style="padding-top:50%;"><img src="images/img_158.png" alt=""></div>
+          <div class="img-box" style="padding-top:126.58%;"><img src="images/img_159.png" alt=""></div>
+          <div class="img-box" style="padding-top:50%;"><img src="images/img_160.png" alt=""></div>
+        </div>
+        <div style="flex:1; display:flex; flex-direction:column;">
+          <div style="flex:1; border-radius:12px; overflow:hidden;">
+            <img src="images/img_161.png" alt="" style="width:100%; height:100%; object-fit:cover; border-radius:12px; display:block;">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- WEATHER OR NOT -->
+    <div style="margin:40px auto 0;max-width:1100px;width:calc(100% - 32px);background:rgba(200,215,255,0.28);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1.5px solid rgba(255,255,255,0.75);border-radius:14px;box-shadow:0 0 8px 2px rgba(43,59,168,0.30),0 0 20px 6px rgba(43,59,168,0.20),0 0 35px 10px rgba(245,166,35,0.18),0 0 55px 18px rgba(43,59,168,0.08),inset 0 1px 3px rgba(255,255,255,0.95);padding:24px;">
+      <div style="font-family:'Gotham','Barlow Condensed',sans-serif;font-weight:900;font-size:15px;letter-spacing:0.12em;text-transform:uppercase;text-align:center;color:var(--blue);margin-bottom:18px;">Weather or Not</div>
+      <div class="gap">
+        <div class="won-row-ab">
+          <div class="won-left-ab">
+            <img class="proj-img" src="images/img_162.png" alt="img 162">
+            <img class="proj-img" src="images/img_163.png" alt="img 163">
+          </div>
+          <div>
+            <img class="proj-img" src="images/img_164.png" alt="img 164">
+          </div>
+        </div>
+        <div class="won-row-c">
+          <img class="proj-img" src="images/img_165.png" alt="img 165">
+          <img class="proj-img" src="images/img_166.png" alt="img 166">
+        </div>
+        <img class="proj-img" src="images/img_167.png" alt="img 167">
+        <img class="proj-img" src="images/img_168.png" alt="img 168">
+      </div>
+    </div>
+
+    <!-- EXPLORATION OF PROGRESSION -->
+    <div style="margin:40px auto 0;max-width:1100px;width:calc(100% - 32px);background:rgba(200,215,255,0.28);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1.5px solid rgba(255,255,255,0.75);border-radius:14px;box-shadow:0 0 8px 2px rgba(43,59,168,0.30),0 0 20px 6px rgba(43,59,168,0.20),0 0 35px 10px rgba(245,166,35,0.18),0 0 55px 18px rgba(43,59,168,0.08),inset 0 1px 3px rgba(255,255,255,0.95);padding:24px;">
+      <div style="font-family:'Gotham','Barlow Condensed',sans-serif;font-weight:900;font-size:15px;letter-spacing:0.12em;text-transform:uppercase;text-align:center;color:var(--blue);margin-bottom:18px;">Exploration of Progression</div>
+      <div class="gap">
+        <img class="proj-img" src="images/img_169.png" alt="img 169">
+        <div class="exp-row-3col">
+          <img class="proj-img" src="images/img_170.png" alt="img 170">
+          <img class="proj-img" src="images/img_171.png" alt="img 171">
+          <img class="proj-img" src="images/img_172.png" alt="img 172">
+        </div>
+        <div class="exp-row-3col">
+          <img class="proj-img" src="images/img_173.png" alt="img 173">
+          <img class="proj-img" src="images/img_174.png" alt="img 174">
+          <img class="proj-img" src="images/img_175.png" alt="img 175">
+        </div>
+        <div class="exp-row-2col">
+          <img class="proj-img" src="images/img_176.png" alt="img 176">
+          <img class="proj-img" src="images/img_177.png" alt="img 177">
+        </div>
+        <div class="exp-row-2col">
+          <img class="proj-img" src="images/img_178.png" alt="img 178">
+          <img class="proj-img" src="images/img_179.png" alt="img 179">
+        </div>
+        <img class="proj-img" src="images/img_180.png" alt="img 180">
+        <img class="proj-img" src="images/img_181.png" alt="img 181">
+      </div>
+    </div>
+
   </div>
 </div>
 
-<script>
-  function scrollToContact() {
-    // If not on home page, go there first then scroll
-    showPage('home');
-    setTimeout(() => {
-      const el = document.getElementById('contact-footer');
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    }, 100);
-  }
 
-  function showPage(id) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
 
-  function toggleSwSkills() {
-    const icons = document.getElementById('sw-icons');
-    const text  = document.getElementById('sw-text');
-    const btn   = document.getElementById('sw-swap-btn');
-    if (icons.style.display === 'none') {
-      icons.style.display = 'block';
-      text.style.display  = 'none';
-    } else {
-      icons.style.display = 'none';
-      text.style.display  = 'block';
-    }
-    btn.style.transform = btn.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
-  }
-</script>
 </body>
 </html>
